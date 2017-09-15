@@ -1,18 +1,15 @@
 package core;
 
 import java.io.*;
-import java.nio.Buffer;
 import java.util.*;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.testng.*;
 import org.testng.annotations.*;
-import ru.yandex.qatools.allure.data.plugins.Plugin;
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import java.lang.reflect.Method;
 
 public class PrimeNumberCheckerTest implements ITest {
-    String csvFile = "./primes.csv";
+    String csvFile = "./src/test/java/core/primes.csv";
     private String test_name = "";
     public String getTestName() {
         return test_name;
